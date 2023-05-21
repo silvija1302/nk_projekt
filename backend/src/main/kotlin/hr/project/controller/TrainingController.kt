@@ -1,5 +1,5 @@
 package hr.project.controller
-
+/*
 import hr.project.model.Training
 import hr.project.service.impl.TrainingServiceImpl
 import io.micronaut.http.HttpResponse
@@ -72,3 +72,4 @@ class TrainingController(
         }
     }
 }
+*/

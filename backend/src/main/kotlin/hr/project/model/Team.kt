@@ -1,7 +1,7 @@
 package hr.project.model
 
 data class Team(
-    var id: Int,
+    var id: Int? = null,
     var name: String,
     var shortName: String,
     var stadium: Stadium,
@@ -21,7 +21,7 @@ data class Team(
 }
 
 data class TeamDto(
-    var id: Int,
+    var id: Int? = null,
     var name: String,
     var shortName: String,
     var stadium: Stadium,

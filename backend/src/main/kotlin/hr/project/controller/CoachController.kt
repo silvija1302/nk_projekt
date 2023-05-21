@@ -1,5 +1,5 @@
 package hr.project.controller
-
+/*
 import hr.project.model.Coach
 import hr.project.service.impl.CoachServiceImpl
 import io.micronaut.http.HttpResponse
@@ -73,3 +73,4 @@ class CoachController (
         }
     }
 }
+*/

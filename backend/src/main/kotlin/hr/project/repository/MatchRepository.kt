@@ -1,5 +1,5 @@
 package hr.project.repository
-
+/*
 import hr.project.model.Match
 import hr.project.model.Team
 import io.micronaut.data.annotation.Repository
@@ -15,3 +15,4 @@ interface MatchRepository: CrudRepository<Match, Long> {
     fun existsById(id: Int): Boolean
     fun findByHomeTeamOrAwayTeam(team: Team): List<Match>
 }
+*/

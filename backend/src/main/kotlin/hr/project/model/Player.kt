@@ -1,9 +1,10 @@
 package hr.project.model
 
+import io.micronaut.data.annotation.Id
 import java.util.*
 
 data class Player(
-    var id: Int,
+    @Id var id: Int,
     var firstName: String,
     var lastName: String,
     var birthDate: Date,

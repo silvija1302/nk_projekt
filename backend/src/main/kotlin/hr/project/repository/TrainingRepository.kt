@@ -1,17 +1,19 @@
 package hr.project.repository
-
+/*
 import hr.project.model.Team
 import hr.project.model.Training
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.repository.CrudRepository
+import java.util.*
 
 @Repository
-interface TrainingRepository: CrudRepository<Training, Long> {
+interface TrainingRepository: CrudRepository<Training, Int> {
     override fun findAll(): List<Training>
-    fun findById(id: Int): Training
+    override fun findById(id: Int): Optional<Training>
     fun save(training: Training): Training
     fun update(training: Training): Training
-    fun deleteById(id: Int)
+    override fun deleteById(id: Int)
     fun findByTeam(team: Team): List<Training>
-    fun existsById(id: Int): Boolean
+    override fun existsById(id: Int): Boolean
 }
+*/

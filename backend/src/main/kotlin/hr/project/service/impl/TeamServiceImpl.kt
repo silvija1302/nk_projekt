@@ -17,7 +17,7 @@ class TeamServiceImpl(
     }
 
     override suspend fun getById(id: Int): Team {
-        return teamRepository.findById(id)
+        return teamRepository.findById(id).orElseThrow()
     }
 
     override suspend fun create(t: Team): Team {

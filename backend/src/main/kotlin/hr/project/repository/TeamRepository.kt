@@ -1,15 +1,18 @@
 package hr.project.repository
 
 import hr.project.model.Team
+import io.micronaut.data.annotation.Query
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.repository.CrudRepository
+import jakarta.persistence.EntityManager
+import java.util.*
+import javax.transaction.Transactional
 
 @Repository
-interface TeamRepository: CrudRepository<Team, Long> {
+@Transactional
+interface TeamRepository : CrudRepository<Team, Int> {
     override fun findAll(): List<Team>
-    fun findById(id: Int): Team
-    fun save(team: Team): Team
-    fun update(team: Team): Team
-    fun deleteById(id: Int)
-    fun existsById(id: Int): Boolean
+    override fun findById(id: Int): Optional<Team>
+    override fun delete(entity: Team)
+    override fun existsById(id: Int): Boolean
 }

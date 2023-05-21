@@ -35,8 +35,12 @@ dependencies {
 
     /* Coroutines */
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.7")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+    /* Tests */
+    testImplementation("org.mockito:mockito-junit-jupiter:4.2.0")
 
 }
 

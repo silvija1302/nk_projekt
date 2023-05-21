@@ -1,5 +1,5 @@
 package hr.project.repository
-
+/*
 import hr.project.model.League
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.repository.CrudRepository
@@ -12,3 +12,4 @@ interface LeagueRepository: CrudRepository<League, Long> {
     fun update(league: League): League
     fun deleteById(id: Int)
 }
+*/
